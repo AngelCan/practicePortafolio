@@ -1,0 +1,187 @@
+.cuadro{
+    width: 94rem;
+    display: inline-block;
+    align-content:center;
+    font-family: 'Montserrat', sans-serif;
+}
+.tittle{
+    text-align: center;
+}
+.tittle h1{
+    font-size: larger;
+    display: inline-block;
+    align-items: center;
+}
+.tittle h1:nth-child(2n){
+    font-size: medium;
+}
+.tittle p{
+    color: #F514AD;
+}
+
+.images h3{
+    visibility: hidden;
+    position: relative;
+    top: 83%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+}
+.images p{
+    visibility: hidden;
+    position: relative;
+    top: 83%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+}
+.images:hover p{
+    visibility: visible;
+}
+.images:hover h3{
+    visibility: visible;
+}
+.images:hover{
+    background-color: white;
+    top:100%;
+    left: 0;
+    right: 0;
+    transition: all 1s;
+    opacity: 0.90;
+}
+.area{
+    align-content: center;
+    text-align: center;
+}
+.secondArea{
+    align-content: space-around;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 10%;
+}
+.card{
+    max-width: 300px;
+}
+.card figure {
+    max-width: 300px;
+    filter: grayscale(100%);
+    transform: scale(1);
+    transition: all .5s;
+}
+.card figure:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.area:nth-child(3n){
+    background-color: #F2F2F2;
+    align-content: space-around;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 20%;
+}
+.card h2{
+    color: dimgray;
+}
+.icons{
+    color:dimgray;
+}
+.boton{
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem;
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 90px;
+    background-color: white;
+    color: #323433;
+}
+
+.card2{
+    background-color: white;
+    max-width: 387px;
+    gap: 20px;
+}
+.card figure img{
+    max-height: 300px;
+    max-width: 300px;
+}
+.area3{
+    padding-left: 15%;
+    gap: 20px;
+    display: flex;
+}
+.card3{
+    max-width: 387px;
+    box-shadow: 0px 0px 20px #ccc;
+}
+.card3 figure {
+    overflow: hidden;
+    height: 262px;
+}
+.card3 figure img {
+    transform: scale(1);
+    transition: all .5s;
+}
+  
+.card3:hover figure img {
+    transform: scale(1.1);
+}
+.card3 a{
+    color:dimgray;
+}
+.price{
+    display: inline-block;
+    flex-direction: row;
+}
+.month{
+    color: #F514AD;
+}
+ 
+.photo-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+.photo {
+    position: relative;
+    overflow: hidden;
+}
+  
+#info {
+    background-color: white;
+    position: absolute;
+    top:100%;
+    left: 0;
+    right: 0;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.90;
+  }
+  
+#info a {
+    border-radius: 50%;
+    background-color: var(--main-color);
+    padding: 10px;
+}
+  
+.show-more-img {
+    max-width: 20px;
+    max-height: 20px;
+}
+  
+#info a:hover figure {
+    transform: scale(1.1);
+    transform: all .5s;
+}
+  
+.photo:hover #info{
+    top: 0;
+}
